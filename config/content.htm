@@ -1,14 +1,42 @@
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<h1 contenteditable="true" data-element="title">Strategies for Learning</h1>
+<p></p>
+<p>PC Hardware is an online course, where the content will be presented in the form of both text and activities.</p>
+<p>While you will have more flexibility than in a traditional course, you will also have more responsibility for your own learning. You will need to:</p>
+<ul lang="">
+<li lang="">Plan how to work through each unit.</li>
+<li lang="">Determine how to use the various features of the course to help you learn.</li>
+<li lang="">Decide when you need to seek additional support.</li>
+</ul>
+<div class="section" id="N10666">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">What You Need to Know About the Course</span></h2>
+This course contains multiple modules. Each module has features designed to support you as an independent learner, including:
+<ul lang="">
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Learning Objectives:</em></em><span> </span>These are descriptions of what you should be able to do at the end of a section. A Learning Objective will allow you to direct your learning efforts and enable you to monitor your progress as you explore the content and engage in the activities.</li>
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Explanatory Content:</em></em><span> </span>This is the informational “meat” of every chapter. Consisting of short passages of text with information, examples, images, and explanations, this explanatory content contains pieces such as:
+<ul lang="">
+<li lang=""><em class="italic" lang="">Walk-throughs:</em><span> </span>These are videos embedded in the pages to exemplify the concepts you are exploring. They may provide a more detailed explanation of a topic or guide you through the steps of a process.</li>
+<li lang=""><em class="italic" lang="">Examples:</em><span> </span>Designed to illustrate specific applications of the skills and learning objectives that the course supports you to achieve.</li>
+<li lang=""><em class="italic" lang="">Labs:</em><span> </span>Simulations and lab activities designed to give you an opportunity to interact with various hardware elements.</li>
+<li lang=""><em class="italic" lang="">Many Students Wonder sidebars:</em><span> </span>These sidebars serve two purposes: (1) to give a quick review of concepts, such as "highly specialized input devices," that are used in the PC Hardware material and (2) to provide additional material or background information that you may find surprising and interesting but that is not going to be assessed in the Quiz.</li>
+</ul>
+</li>
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Learning Activities:</em></em><span> </span>There are different types of activities interspersed throughout the course. They include:
+<ul lang="">
+<li lang=""><em class="italic" lang="">Learn By Doing activities:</em><span> </span>Learn By Doing activities follow the short explanations and examples. These activities give you the chance to investigate and practice key ideas. Learn By Doing activities have hints and feedback to guide you if you need it.</li>
+<li lang=""><em class="italic" lang="">Did I Get This? activities:</em><span> </span>Did I Get This? activities are your chance to do a quick "self-check." These activities do not have hints, and often follow a Learn by Doing activity so that you can determine if you understand the key ideas. This will help you make sure you are ready for graded activities.</li>
+<li lang=""><em class="italic" lang="">Quizzes:</em><span> </span>These are short assignments that are graded. There is a Quiz at the end of each Module. The Quiz will show you and your instructor how well you understand the key concepts. If you read the information and do the activities in each Module, you should be ready for the Quiz.</li>
+</ul>
+</li>
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Metacognitive Activities:</em></em><span> </span>These activities are designed to support your development as an independent learner, encouraging you to reflect on your progress and plan for continuing success. These activities include:
+<ul lang="">
+<li lang=""><em class="italic" lang="">My Response activities:</em><span> </span>These short activities are located at the end of the module; they encourage you to reflect on your progress through the module and estimate how well you believe you've attained the module's learning objectives. These activities also provide a place to share continuing questions and areas of difficulty (if you're using the course in conjunction with an instructor, your questions will be shared with your instructor).</li>
+<li lang=""><em class="italic" lang="">Checkpoints:</em><span> </span>These activities are located across the course after sections of content that can be particularly challenging or require additional practice. These metacognitive<span> </span><span class="term" lang="">checkpoints</span>encourage you to review your progress so far and assess yourself: are you ready to continue, or do you believe you need additional materials, practice, or self-assessment? If you feel that you're not ready to proceed, these checkpoints provide links to additional learning materials.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 <h2>Develop</h2>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
