@@ -281,9 +281,62 @@
 <pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="s">"test"</span><span class="p">)</span></code></pre>
 </figure>
 <p><span><span>但是除法和減法不是這樣的。</span><span>就乘法而言，將兩個字符串相乘的想法尚不明確。</span><span>首先將兩個字符串相乘是什麼意思？</span><span>但是，以某種方式指定將字符串乘以數字是有意義的-只需將該字符串重複該次數即可。</span><span>在你自己的程序中嘗試使用帶有數字和字符串的所有算術運算-嘗試一下什麼有效和什麼無效的最佳方法是嘗試一下！</span></span></p>
-<p><span><span></span></span></p>
+<h2><span><span>Odd Or Even</span></span></h2>
+<div><i>input if types int equality comparison numbers mod</i></div>
+<div><i><span>Again, the exercise comes first (with a few extras if you want the extra challenge or want to spend more time), followed by a discussion. Enjoy!</span></i></div>
+<h3><i><span>Exercise 2 and solution</span></i></h3>
+<div><span>Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user. </span><em>Hint: how does an even / odd number react differently when divided by 2?</em>
+<p>Extras:</p>
+<ol>
+<li>If the number is a multiple of 4, print out a different message.</li>
+<li>Ask the user for two numbers: one number to check (call it<span> </span><code class="highlighter-rouge">num</code>) and one number to divide by (<code class="highlighter-rouge">check</code>). If<span> </span><code class="highlighter-rouge">check</code><span> </span>divides evenly into<span> </span><code class="highlighter-rouge">num</code>, tell that to the user. If not, print a different appropriate message.</li>
+</ol>
+<h3>Discussion</h3>
+<p>Concepts for this week:</p>
+<ul>
+<li>Modular arithmetic (the modulus operator)</li>
+<li>Conditionals (if statements)</li>
+<li>Checking equality</li>
+</ul>
+<h3>Modular arithmetic the modulus operator</h3>
+<p>We have been doing arithmetic (addition, subtraction, multiplication, division) since elementary school, and often it is useful for us to find not the answer to a division problem but the remainder when we do a division operation. This operation is called the “modulus operation.” For example, when I divide 5 by 3, the remainder is 2, and the sentence reads like this: “5 modulo 3 is 2.”</p>
+<p>In the Python shell:</p>
+<p><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span></p>
+<p>2</p>
+<p><span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span> <span class="o">%</span> <span class="mi">3</span></p>
+<p>0</p>
+<p><span class="o">&gt;&gt;&gt;</span> <span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span></p>
+<p>1</p>
+<p>The<span> </span><code class="highlighter-rouge">%</code><span> </span>sign is exactly the modulus operator.</p>
+<h3>Conditionals</h3>
+<p>When a computer (or a program) needs to decide something, it checks whether some condition is satisfied, which is where the term<span> </span><strong>conditional</strong><span> </span>comes from. Conditionals are a fancy way of saying “if statements”. If Michele was born in New York, she has an American passport. That statement is a conditional (if statement) that in this case is true. In Python this works the same way:</p>
+<p></p>
+<pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">17</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated R movie"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">17</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated PG-13 movie"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can only see rated PG movies"</span><span class="p">)<br/></span></code></pre>
+<p>When the program gets to the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, it will check the value of the variable called<span> </span><code class="highlighter-rouge">age</code><span> </span>against all of the conditions, in order, and will print something to the screen accordingly. Note that<span> </span><code class="highlighter-rouge">elif</code><span> </span>is a portmanteau of “else” and “if”. So if the variable<span> </span><code class="highlighter-rouge">age</code><span> </span>holds the value 15, the statement<span> </span><code class="highlighter-rouge">"can see a rated PG-13 movie"</code><span> </span>will be printed to the screen.</p>
+<p>Note how the statement<span> </span><code class="highlighter-rouge">elif age &lt; 17 and age &gt; 12</code><span> </span>has the statement<span> </span><code class="highlighter-rouge">and</code><span> </span>- you can use<span> </span><code class="highlighter-rouge">or</code><span> </span>and<span> </span><code class="highlighter-rouge">not</code><span> </span>in the same way. Understanding a bit about logic and how it works, or being able to rationally think about logic will help you get the conditions right - oh, and a lot of practice.</p>
+<h3 id="checking-for-equality-and-comparators-in-general">Checking for equality and comparators in general</h3>
+<p><span>A fundamental thing you want to do with your program is check whether some number is equal to another. Say the user tells you how many questions they answered incorrectly on a practice exam, and depending on the number of correctly-answered questions, you can suggest a specific course of action. For integers, strings, floats, and many other variable types, this is done with a simple syntax: </span><code class="highlighter-rouge">==</code><span>. To explicitly check inequality, use<span> </span></span><code class="highlighter-rouge">!=</code><span>.</span></p>
+<p><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span></p>
+<p><span class="k">print</span><span class="p">(</span><span class="s">"the variable has the value 3"</span><span class="p">)</span></p>
+<p><span class="k">elif</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span></p>
+<p><span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></p>
+<p><span class="p"><span>Notice how in this example, the condition is redundant. In the first condition we are checking whether the variable </span><code class="highlighter-rouge">a</code><span><span> </span>has the value 3 and in the second, we are checking whether<span> </span></span><code class="highlighter-rouge">a</code><span><span> </span>does NOT have the value 3. However, if the first condition is not true (</span><code class="highlighter-rouge">a</code><span><span> </span>is in fact not 3), then the second condition is by definition true. So a more efficient way to write the above conditional is like this:</span></span></p>
+<p><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span></p>
+<p><span class="k">print</span><span class="p">(</span><span class="s">"the variable has the value 3"</span><span class="p">)</span></p>
+<p><span class="k">else</span><span class="p">:</span></p>
+<p><span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></p>
+<p>The same equality / inequality comparisons work for strings.</p>
+<p>Links about equality and comparators:</p>
+<figure class="highlight">
+<pre></pre>
+</figure>
 </div>
-<div class="boxframe center"></div>
+</div>
 </div>
 </div>
 </div>
