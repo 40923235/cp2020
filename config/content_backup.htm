@@ -281,24 +281,42 @@
 <pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="s">"test"</span><span class="p">)</span></code></pre>
 </figure>
 <p><span><span>但是除法和減法不是這樣的。</span><span>就乘法而言，將兩個字符串相乘的想法尚不明確。</span><span>首先將兩個字符串相乘是什麼意思？</span><span>但是，以某種方式指定將字符串乘以數字是有意義的-只需將該字符串重複該次數即可。</span><span>在你自己的程序中嘗試使用帶有數字和字符串的所有算術運算-嘗試一下什麼有效和什麼無效的最佳方法是嘗試一下！</span></span></p>
-<h2><span><span>Odd Or Even</span></span></h2>
+<h2><span><span>Odd Or Even奇數或偶數</span></span></h2>
 <div><i>input if types int equality comparison numbers mod</i></div>
 <div><i><span>Again, the exercise comes first (with a few extras if you want the extra challenge or want to spend more time), followed by a discussion. Enjoy!</span></i></div>
-<br/>Exercise 2 and<span> </span><a href="https://www.practicepython.org/solution/2014/02/15/02-odd-or-even-solutions.html">Solution</a>
-<div><span>Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user. </span><em>Hint: how does an even / odd number react differently when divided by 2?</em>
+<div>
+<div><i><span>輸入類型是否等於相等比較數mod</span></i></div>
+<p><span><span>再次，練習是第一位的（如果您需要額外的挑戰或想要花費更多的時間，還可以進行一些其他操作），然後進行討論。</span><span>請享受！</span></span></p>
+<br/><i><span>Exercise 2 and solution</span></i><span>練習2和解決方案</span>
+<p><span>Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user. </span><em>Hint: how does an even / odd number react differently when divided by 2?</em></p>
+</div>
+</div>
+<div class="boxframe center">
 <p>Extras:</p>
 <ol>
 <li>If the number is a multiple of 4, print out a different message.</li>
 <li>Ask the user for two numbers: one number to check (call it<span> </span><code class="highlighter-rouge">num</code>) and one number to divide by (<code class="highlighter-rouge">check</code>). If<span> </span><code class="highlighter-rouge">check</code><span> </span>divides evenly into<span> </span><code class="highlighter-rouge">num</code>, tell that to the user. If not, print a different appropriate message.</li>
 </ol>
-<h3>Discussion</h3>
+<p>詢問用戶一個數字。根據數字是偶數還是奇數，向用戶打印一條適當的消息。<em><span>提示：偶數/奇數除以2時的反應如何？</span></em></p>
+<p><span><span>附加功能：</span></span></p>
+<ol>
+<li><span><span>如果數字是4的倍數，請打印出另一條消息。</span></span></li>
+<li><span><span>向用戶詢問兩個數字：一個數字要檢查（稱為</span></span><code class="highlighter-rouge">num</code><span><span>），另一個數字要除以（</span></span><code class="highlighter-rouge">check</code><span><span>）。</span><span>如果</span></span><code class="highlighter-rouge">check</code><span><span>平均分為</span></span><code class="highlighter-rouge">num</code><span><span>，請告知用戶。</span><span>如果不是，請打印其他適當的消息。</span></span></li>
+</ol>
+<h3>Discussion討論區</h3>
 <p>Concepts for this week:</p>
 <ul>
 <li>Modular arithmetic (the modulus operator)</li>
 <li>Conditionals (if statements)</li>
 <li>Checking equality</li>
 </ul>
-<h3>Modular arithmetic the modulus operator</h3>
+<p> 本週的概念：</p>
+<ul>
+<li><span><span>模塊化算術（模運算符）</span></span></li>
+<li><span><span>有條件的（如果語句）</span></span></li>
+<li><span><span>檢查平等</span></span></li>
+</ul>
+<h3>Modular arithmetic the modulus operator模塊化算術模運算符</h3>
 <p>We have been doing arithmetic (addition, subtraction, multiplication, division) since elementary school, and often it is useful for us to find not the answer to a division problem but the remainder when we do a division operation. This operation is called the “modulus operation.” For example, when I divide 5 by 3, the remainder is 2, and the sentence reads like this: “5 modulo 3 is 2.”</p>
 <p>In the Python shell:</p>
 <p><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span></p>
@@ -308,7 +326,19 @@
 <p><span class="o">&gt;&gt;&gt;</span> <span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span></p>
 <p>1</p>
 <p>The<span> </span><code class="highlighter-rouge">%</code><span> </span>sign is exactly the modulus operator.</p>
-<h3>Conditionals</h3>
+<p><span>從小學開始，我們就一直在進行算術運算（加，減，乘，除），這對於我們尋找除法問題不是答案，而是對除法運算的其餘部分有用。該操作稱為“模運算”。例如，當我將5除以3時，餘數為2，句子的內容如下：“ 5模3為2”。</span></p>
+<p><span><span>在Python Shell中：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">7</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">1</span></code></pre>
+</figure>
+<p><span><span>該</span></span><code class="highlighter-rouge">%</code><span><span>標誌是完全模運算符。</span></span></p>
+<h3>Conditionals有條件的</h3>
 <p>When a computer (or a program) needs to decide something, it checks whether some condition is satisfied, which is where the term<span> </span><strong>conditional</strong><span> </span>comes from. Conditionals are a fancy way of saying “if statements”. If Michele was born in New York, she has an American passport. That statement is a conditional (if statement) that in this case is true. In Python this works the same way:</p>
 <p></p>
 <pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">17</span><span class="p">:</span> 
@@ -319,8 +349,21 @@
   <span class="k">print</span><span class="p">(</span><span class="s">"can only see rated PG movies"</span><span class="p">)<br/></span></code></pre>
 <p>When the program gets to the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, it will check the value of the variable called<span> </span><code class="highlighter-rouge">age</code><span> </span>against all of the conditions, in order, and will print something to the screen accordingly. Note that<span> </span><code class="highlighter-rouge">elif</code><span> </span>is a portmanteau of “else” and “if”. So if the variable<span> </span><code class="highlighter-rouge">age</code><span> </span>holds the value 15, the statement<span> </span><code class="highlighter-rouge">"can see a rated PG-13 movie"</code><span> </span>will be printed to the screen.</p>
 <p>Note how the statement<span> </span><code class="highlighter-rouge">elif age &lt; 17 and age &gt; 12</code><span> </span>has the statement<span> </span><code class="highlighter-rouge">and</code><span> </span>- you can use<span> </span><code class="highlighter-rouge">or</code><span> </span>and<span> </span><code class="highlighter-rouge">not</code><span> </span>in the same way. Understanding a bit about logic and how it works, or being able to rationally think about logic will help you get the conditions right - oh, and a lot of practice.</p>
-<h3 id="checking-for-equality-and-comparators-in-general">Checking for equality and comparators in general</h3>
-<p><span>A fundamental thing you want to do with your program is check whether some number is equal to another. Say the user tells you how many questions they answered incorrectly on a practice exam, and depending on the number of correctly-answered questions, you can suggest a specific course of action. For integers, strings, floats, and many other variable types, this is done with a simple syntax: </span><code class="highlighter-rouge">==</code><span>. To explicitly check inequality, use<span> </span></span><code class="highlighter-rouge">!=</code><span>.</span></p>
+<p><span>當計算機（或程序）需要做出決定時，它會檢查是否滿足某些條件，這就是</span><strong><span>條件</span></strong><span>一詞的來源。條件語句是說“ if語句”的一種奇特的方式。如果米歇爾（Michele）出生於紐約，則她擁有美國護照。該語句是在這種情況下為真的條件（如果語句）。在Python中，這是相同的方式：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">17</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated R movie"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">17</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated PG-13 movie"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can only see rated PG movies"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>當程序到達該</span></span><code class="highlighter-rouge">if</code><span><span>語句時，它將按</span></span><code class="highlighter-rouge">age</code><span><span>所有條件依次</span><span>檢查被調用的變量的值</span><span>，並將相應的內容打印到屏幕上。</span><span>請注意，這</span></span><code class="highlighter-rouge">elif</code><span><span>是“ else”和“ if”的組合。</span><span>因此，如果變量</span></span><code class="highlighter-rouge">age</code><span><span>保留值15，則該語句</span></span><code class="highlighter-rouge">"can see a rated PG-13 movie"</code><span><span>將被打印到屏幕上。</span></span></p>
+<p><span><span>請注意該語句如何</span></span><code class="highlighter-rouge">elif age &lt; 17 and age &gt; 12</code><span><span>具有該語句</span></span><code class="highlighter-rouge">and</code><span><span>-您可以使用</span></span><code class="highlighter-rouge">or</code><span><span>和</span></span><code class="highlighter-rouge">not</code><span><span>以相同的方式。</span><span>了解一些有關邏輯及其原理的知識，或者能夠理性地思考邏輯，將幫助您找到合適的條件-哦，還有很多練習。</span></span></p>
+<span><span>有關條件的鏈接：</span></span></div>
+<h3 class="boxframe center"><span><span><br/><span>Checking for equality and comparators in general</span><span>檢查是否相等以及一般的比較器</span></span></span></h3>
+<div class="boxframe center"><span>A fundamental thing you want to do with your program is check whether some number is equal to another. Say the user tells you how many questions they answered incorrectly on a practice exam, and depending on the number of correctly-answered questions, you can suggest a specific course of action. For integers, strings, floats, and many other variable types, this is done with a simple syntax: </span><code class="highlighter-rouge">==</code><span>. To explicitly check inequality, use<span> </span></span><code class="highlighter-rouge">!=</code><span>.</span>
 <p><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span></p>
 <p><span class="k">print</span><span class="p">(</span><span class="s">"the variable has the value 3"</span><span class="p">)</span></p>
 <p><span class="k">elif</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span></p>
@@ -331,11 +374,25 @@
 <p><span class="k">else</span><span class="p">:</span></p>
 <p><span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></p>
 <p>The same equality / inequality comparisons work for strings.</p>
-<p>Links about equality and comparators:</p>
+<p><span>您要對程序執行的基本操作是檢查某個數字是否等於另一個數字。假設用戶告訴您在練習考試中有多少個錯誤回答的問題，並且根據正確回答的問題數，您可以提出具體的操作建議。對於整數，字符串，浮點數和許多其他變量類型，這是通過簡單的語法完成的：</span><code class="highlighter-rouge">==</code><span>。要顯式檢查不平等，請使用</span><code class="highlighter-rouge">!=</code><span>。</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  
+<span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable has the value 3"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>請注意，在此示例中，條件是多餘的。</span><span>在第一個條件中，我們正在檢查變量是否</span></span><code class="highlighter-rouge">a</code><span><span>具有值3，在第二個</span><span>條件中，我們正在檢查變量</span><span>是否</span></span><code class="highlighter-rouge">a</code><span><span>不具有值3。但是，如果第一個條件不成立（</span></span><code class="highlighter-rouge">a</code><span><span>實際上不是3），則第二個條件根據定義，條件是正確的。</span><span>因此，編寫上述條件的更有效方法如下：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable has the value 3"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>相同的相等/不相等比較適用於字符串。<br/></span></span></p>
 <figure class="highlight">
 <pre></pre>
 </figure>
-</div>
 </div>
 </div>
 </div>
