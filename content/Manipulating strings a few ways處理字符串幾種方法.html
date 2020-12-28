@@ -133,10 +133,60 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='UNIT 1.html'>Next</a> >> UNIT 1<br /><h1>首頁</h1>
-<p><span style="color: #ff00ff;">40923235</span></p>
-<p></p>
-<br /> <a href='UNIT 1.html'>Next</a> >> UNIT 1</div>
+    <div id="tipue_search_content">User input in Python使用Python的用戶輸入 << <a href='User input in Python使用Python的用戶輸入.html'>Previous</a> <a href='Odd Or Even奇數或偶數.html'>Next</a> >> Odd Or Even奇數或偶數<br /><h1>Manipulating strings a few ways處理字符串幾種方法</h1>
+<p>What you get from the<span> </span><code class="highlighter-rouge">input()</code><span> </span>function is a string. What can you do with it?</p>
+<p>First: Make the string into a number. Let’s say you are 100% positive that the user entered a number. You can turn the string into an integer with the function<span> </span><a href="http://docs.python.org/3.3/library/functions.html#int"><code class="highlighter-rouge">int()</code></a>. (In a later exercise or two or three there will be questions about what to do when the user does NOT enter a number and you try to do this; for now don’t worry about that problem). Here is what this looks like:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span></code></pre>
+</figure>
+<p>(or, if you want to be more compact with your code)</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">))</span>
+	</code></pre>
+</figure>
+<p>In both cases,<span> </span><code class="highlighter-rouge">age</code><span> </span>will hold a variable that is an integer, and now you can do math with it.</p>
+<p>(Note, you can also turn integers into strings exactly in the opposite way, using the<span> </span><a href="http://docs.python.org/3.3/library/functions.html#str"><code class="highlighter-rouge">str()</code></a><span> </span>function)</p>
+<p>Second: Do math with strings. What do I mean by that? I mean, if I want to combine (<strong>concatenate</strong><span> </span>is the computer science word for this) strings, all I need to do is add them:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">	
+<span class="k">print</span><span class="p">(</span><span class="s">"Were"</span> <span class="o">+</span> <span class="s">"wolf"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Door"</span> <span class="o">+</span> <span class="s">"man"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"4"</span> <span class="o">+</span> <span class="s">"chan"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="s">"chan"</span><span class="p">)</span></code></pre>
+</figure>
+<p>The same works for multiplication:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="s">"test"</span><span class="p">)</span></code></pre>
+</figure>
+<p>but division and subtraction do not work like this. In terms of multiplication, the idea of multiplyling two strings together is not well-defined. What does it mean to multiply two strings in the first place? However, it makes sense in a way to specify multiplying a string by a number - just repeat that string that number of times. Try this in your own program with all the arithmetic operations with numbers and strings - the best way to get a feel for what works and what doesn’t is to try it!</p>
+<p><span>你從</span><code class="highlighter-rouge">input()</code><span>函數中得到的是一個字符串。你能做什麼呢？</span></p>
+<p><span><span>第一：將字符串變成數字。</span><span>假設你100％肯定用戶輸入了數字。你</span><span>可以使用函數將字符串轉換為整數</span></span><a href="http://docs.python.org/3.3/library/functions.html#int"><code class="highlighter-rouge">int()</code></a><span><span>。</span><span>（在以後的一兩三個練習中，當用戶不輸入數字而你嘗試這樣做時，將會出現有關如何處理的問題；現在不必擔心該問題）。</span><span>看起來是這樣的：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>（或者，如果你想使代碼更緊湊）</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age: "</span><span class="p">))</span>
+	</code></pre>
+</figure>
+<p><span><span>在這兩種情況下，</span></span><code class="highlighter-rouge">age</code><span><span>都將包含一個整數變量，現在你可以使用它進行數學運算。</span></span></p>
+<p><span><span>（注意，你也可以使用</span></span><a href="http://docs.python.org/3.3/library/functions.html#str"><code class="highlighter-rouge">str()</code></a><span><span>函數</span><span>以相反的方式將整數轉換為字符串</span><span>）</span></span></p>
+<p><span><span>第二：對字符串進行數學運算。</span><span>那是什麼意思<span> </span></span><span>我的意思是，如果我想組合（</span></span><strong><span><span>連接</span></span></strong><span><span>起來</span><span>就是計算機科學這個詞）字符串，我要做的就是添加它們：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">	
+<span class="k">print</span><span class="p">(</span><span class="s">"Were"</span> <span class="o">+</span> <span class="s">"wolf"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Door"</span> <span class="o">+</span> <span class="s">"man"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"4"</span> <span class="o">+</span> <span class="s">"chan"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="s">"chan"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>乘法的工作原理相同：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="s">"test"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>但是除法和減法不是這樣的。</span><span>就乘法而言，將兩個字符串相乘的想法尚不明確。</span><span>首先將兩個字符串相乘是什麼意思？</span><span>但是，以某種方式指定將字符串乘以數字是有意義的-只需將該字符串重複該次數即可。</span><span>在你自己的程序中嘗試使用帶有數字和字符串的所有算術運算-嘗試一下什麼有效和什麼無效的最佳方法是嘗試一下！</span></span></p>
+<br />User input in Python使用Python的用戶輸入 << <a href='User input in Python使用Python的用戶輸入.html'>Previous</a> <a href='Odd Or Even奇數或偶數.html'>Next</a> >> Odd Or Even奇數或偶數</div>
         
     <!-- footer -->
       <div class="container">

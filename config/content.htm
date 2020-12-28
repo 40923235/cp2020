@@ -389,7 +389,72 @@
 <span class="k">else</span><span class="p">:</span>
   <span class="k">print</span><span class="p">(</span><span class="s">"the variable does not have the value 3"</span><span class="p">)</span></code></pre>
 </figure>
-<p><span><span>相同的相等/不相等比較適用於字符串。<br/></span></span></p>
+<p><span><span>相同的相等/不相等比較適用於字符串。</span></span></p>
+<h2><span><span>List Less Than Ten</span></span></h2>
+<p><span><span><i>list numbers elements if conditional</i></span></span></p>
+<h3><span><span><i>Exercise 3 and<span> Solution</span></i></span></span></h3>
+<p>Take a list, say for example this one:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span></code></pre>
+</figure>
+<p>and write a program that prints out all the elements of the list that are less than 5.</p>
+<p>Extras:</p>
+<ol>
+<li>Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.</li>
+<li>Write this in one line of Python.</li>
+<li>Ask the user for a number and return a list that contains only elements from the original list<span> </span><code class="highlighter-rouge">a</code><span> </span>that are smaller than that number given by the user.</li>
+</ol>
+<h3 id="discussion">Discussion</h3>
+<p>This week’s topics:</p>
+<ol>
+<li>Lists</li>
+<li>More conditionals (if statements)</li>
+</ol>
+<h3 id="lists">Lists</h3>
+<p>This week’s exercise hits on a topic critical for all types and styles of programming:<span> </span>lists. Lists are basically an ordered way of grouping things (called elements) - the cool thing about lists in Python is that you can have a list that contains objects of multiple types. Your list can mix between strings, integers, objects, other lists, what have you.</p>
+<p>The way to construct an empty list is just to do</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+</figure>
+<p>And your variable<span> </span><code class="highlighter-rouge">x</code><span> </span>now holds an empty list. To add things to this list, just “append” them to the list. Like so:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code></pre>
+</figure>
+<p>Your list<span> </span><code class="highlighter-rouge">x</code><span> </span>now looks like<span> </span><code class="highlighter-rouge">[3]</code>.</p>
+<p>In Python, lists are also iterables, which means you can loop through them with a for loop in a convenient way. (If you come from other languages like C++ or Java you are most likely used to using a counter to loop through indices of a list - in Python you can actually loop through the elements.) I will let the code speak for itself:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span></code></pre>
+</figure>
+<p>Will yield the result:</p>
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon">1 
+3
+"Michele"
+[5, 6, 7]</code></pre>
+</figure>
+<p>There are many other properties of lists, but for the basic exercise all you should need is this for loop property. Future weeks will address other properties of lists.</p>
+<p>For more information about lists in Python, check out these resources:</p>
+<h3 id="more-conditionals">More Conditionals</h3>
+<p>The nice thing about conditionals is that they follow logical operations. They can also be used to test equality. Let’s do a small example. Let’s say I want to make a piece of code that converts from a numerical grade (1-100) to a letter grade (A, B, C, D, F). The code would look like this:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
+</figure>
+<p>What happens if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 50? All the conditions are false, so<span> </span><code class="highlighter-rouge">"F"</code><span> </span>gets printed on the screen. But what if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, executing<span> </span><code class="highlighter-rouge">print("A")</code>. Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
+<p></p>
+<p><span></span></p>
 <figure class="highlight">
 <pre></pre>
 </figure>

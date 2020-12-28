@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,78 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='首頁.html'>首頁</a><li><a href='UNIT 1.html'>UNIT 1</a><ul><li><a href='Strategies for Learning學習策略.html'>Strategies for Learning學習策略</a><li><a href='What You Need to Know About the Course您需要了解的課程內容.html'>What You Need to Know About the Course您需要了解的課程內容</a><li><a href='Metacognition元認知.html'>Metacognition元認知</a><li><a href='Metacognition in Action行動中的元認知.html'>Metacognition in Action行動中的元認知</a></li></ul><li><a href='UNIT2.html'>UNIT2</a><ul><li><a href='Introduction簡介.html'>Introduction簡介</a><li><a href='Functions of Computers  Input  Output  Storage  and Processing計算機功能  輸入  輸出  存儲和處理.html'>Functions of Computers  Input  Output  Storage  and Processing計算機功能  輸入  輸出  存儲和處理</a><li><a href='Hardware硬件.html'>Hardware硬件</a><li><a href='Software軟件.html'>Software軟件</a><li><a href='Fireware固件.html'>Fireware固件</a><li><a href='Componentization  Standardization組件化  標準化.html'>Componentization  Standardization組件化  標準化</a><li><a href='Connection Interfaces and Cables連接接口和電纜.html'>Connection Interfaces and Cables連接接口和電纜</a></li></ul><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a><ul><li><a href='Chacrater input字符輸入.html'>Chacrater input字符輸入</a><ul><li><a href='input strings types int輸入字符串類型int.html'>input strings types int輸入字符串類型int</a><li><a href='Discussion討論區-1.html'>Discussion討論區-1</a><li><a href='User input in Python使用Python的用戶輸入.html'>User input in Python使用Python的用戶輸入</a><li><a href='Manipulating strings a few ways處理字符串幾種方法.html'>Manipulating strings a few ways處理字符串幾種方法</a></li></ul><li><a href='Odd Or Even奇數或偶數.html'>Odd Or Even奇數或偶數</a><ul><li><a href='Exercise 2 and solution練習2和解決方案.html'>Exercise 2 and solution練習2和解決方案</a><li><a href='Discussion討論區-2.html'>Discussion討論區-2</a><li><a href='Modular arithmetic the modulus operator模塊化算術模運算符.html'>Modular arithmetic the modulus operator模塊化算術模運算符</a><li><a href='Conditionals有條件的.html'>Conditionals有條件的</a><li><a href='Checking for equality and comparators in general檢查是否相等以及一般的比較器.html'>Checking for equality and comparators in general檢查是否相等以及一般的比較器</a></li></ul><li><a href='List Less Than Ten.html'>List Less Than Ten</a><ul><li><a href='Exercise 3 and Solution.html'>Exercise 3 and Solution</a><li><a href='Discussion.html'>Discussion</a><li><a href='Lists.html'>Lists</a><li><a href='More Conditionals.html'>More Conditionals</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">Modular arithmetic the modulus operator模塊化算術模運算符 << <a href='Modular arithmetic the modulus operator模塊化算術模運算符.html'>Previous</a> <a href='Checking for equality and comparators in general檢查是否相等以及一般的比較器.html'>Next</a> >> Checking for equality and comparators in general檢查是否相等以及一般的比較器<br /><h1>Conditionals有條件的</h1>
+<p>When a computer (or a program) needs to decide something, it checks whether some condition is satisfied, which is where the term<span> </span><strong>conditional</strong><span> </span>comes from. Conditionals are a fancy way of saying “if statements”. If Michele was born in New York, she has an American passport. That statement is a conditional (if statement) that in this case is true. In Python this works the same way:</p>
+<p></p>
+<pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">17</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated R movie"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">17</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated PG-13 movie"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can only see rated PG movies"</span><span class="p">)<br/></span></code></pre>
+<p>When the program gets to the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, it will check the value of the variable called<span> </span><code class="highlighter-rouge">age</code><span> </span>against all of the conditions, in order, and will print something to the screen accordingly. Note that<span> </span><code class="highlighter-rouge">elif</code><span> </span>is a portmanteau of “else” and “if”. So if the variable<span> </span><code class="highlighter-rouge">age</code><span> </span>holds the value 15, the statement<span> </span><code class="highlighter-rouge">"can see a rated PG-13 movie"</code><span> </span>will be printed to the screen.</p>
+<p>Note how the statement<span> </span><code class="highlighter-rouge">elif age &lt; 17 and age &gt; 12</code><span> </span>has the statement<span> </span><code class="highlighter-rouge">and</code><span> </span>- you can use<span> </span><code class="highlighter-rouge">or</code><span> </span>and<span> </span><code class="highlighter-rouge">not</code><span> </span>in the same way. Understanding a bit about logic and how it works, or being able to rationally think about logic will help you get the conditions right - oh, and a lot of practice.</p>
+<p><span>當計算機（或程序）需要做出決定時，它會檢查是否滿足某些條件，這就是</span><strong><span>條件</span></strong><span>一詞的來源。條件語句是說“ if語句”的一種奇特的方式。如果米歇爾（Michele）出生於紐約，則她擁有美國護照。該語句是在這種情況下為真的條件（如果語句）。在Python中，這是相同的方式：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">17</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated R movie"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">17</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"can see a rated PG-13 movie"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="k">print</span><span class="p">(</span><span class="s">"can only see rated PG movies"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>當程序到達該</span></span><code class="highlighter-rouge">if</code><span><span>語句時，它將按</span></span><code class="highlighter-rouge">age</code><span><span>所有條件依次</span><span>檢查被調用的變量的值</span><span>，並將相應的內容打印到屏幕上。</span><span>請注意，這</span></span><code class="highlighter-rouge">elif</code><span><span>是“ else”和“ if”的組合。</span><span>因此，如果變量</span></span><code class="highlighter-rouge">age</code><span><span>保留值15，則該語句</span></span><code class="highlighter-rouge">"can see a rated PG-13 movie"</code><span><span>將被打印到屏幕上。</span></span></p>
+<p><span><span>請注意該語句如何</span></span><code class="highlighter-rouge">elif age &lt; 17 and age &gt; 12</code><span><span>具有該語句</span></span><code class="highlighter-rouge">and</code><span><span>-您可以使用</span></span><code class="highlighter-rouge">or</code><span><span>和</span></span><code class="highlighter-rouge">not</code><span><span>以相同的方式。</span><span>了解一些有關邏輯及其原理的知識，或者能夠理性地思考邏輯，將幫助您找到合適的條件-哦，還有很多練習。</span></span></p>
+<span><span>有關條件的鏈接：</span></span></div>
+<br />Modular arithmetic the modulus operator模塊化算術模運算符 << <a href='Modular arithmetic the modulus operator模塊化算術模運算符.html'>Previous</a> <a href='Checking for equality and comparators in general檢查是否相等以及一般的比較器.html'>Next</a> >> Checking for equality and comparators in general檢查是否相等以及一般的比較器</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
