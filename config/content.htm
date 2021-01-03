@@ -392,8 +392,9 @@
 <p><span><span>相同的相等/不相等比較適用於字符串。</span></span></p>
 <h2><span><span>List Less Than Ten列出少於十</span></span></h2>
 <p><span><span><i>list numbers elements if conditional</i></span></span></p>
-<h3><span><span><i>Exercise 3 and<span> Solution</span></i></span></span></h3>
-<p>Take a list, say for example this one:</p>
+<div><i><span>如果有條件，則列出數字元素</span></i></div>
+<h3><i><span>Exercise 3 and Solution<span>練習3和解決方案</span></span></i></h3>
+<div>Take a list, say for example this one:</div>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span></code></pre>
 </figure>
@@ -404,13 +405,29 @@
 <li>Write this in one line of Python.</li>
 <li>Ask the user for a number and return a list that contains only elements from the original list<span> </span><code class="highlighter-rouge">a</code><span> </span>that are smaller than that number given by the user.</li>
 </ol>
-<h3 id="discussion">Discussion</h3>
+<p>拿一個清單，例如說一個：</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span></code></pre>
+</figure>
+<p><span><span>並編寫一個程序，打印出列表中小於5的所有元素。</span></span></p>
+<p><span><span>附加功能：</span></span></p>
+<ol>
+<li><span><span>而不是一個一個地打印元素，而是創建一個新列表，其中該列表中的所有元素少於5個，然後打印出該新列表。</span></span></li>
+<li><span><span>用一行Python編寫。</span></span></li>
+<li><span><span>向用戶詢問一個數字，然後返回一個列表，該列表僅包含原始列表</span></span><code class="highlighter-rouge">a</code><span><span>中小於用戶給定數字的</span><span>元素</span><span>。</span></span></li>
+</ol>
+<h3>Discussion討論區</h3>
 <p>This week’s topics:</p>
 <ol>
 <li>Lists</li>
 <li>More conditionals (if statements)</li>
 </ol>
-<h3 id="lists">Lists</h3>
+<p> 本週主題：</p>
+<ol>
+<li><span><span>清單</span></span></li>
+<li><span><span>更多條件（如果語句）</span></span></li>
+</ol>
+<h3>Lists清單</h3>
 <p>This week’s exercise hits on a topic critical for all types and styles of programming:<span> </span>lists. Lists are basically an ordered way of grouping things (called elements) - the cool thing about lists in Python is that you can have a list that contains objects of multiple types. Your list can mix between strings, integers, objects, other lists, what have you.</p>
 <p>The way to construct an empty list is just to do</p>
 <figure class="highlight">
@@ -436,8 +453,32 @@
 [5, 6, 7]</code></pre>
 </figure>
 <p>There are many other properties of lists, but for the basic exercise all you should need is this for loop property. Future weeks will address other properties of lists.</p>
-<p>For more information about lists in Python, check out these resources:</p>
-<h3 id="more-conditionals">More Conditionals</h3>
+<p><span>本週的練習涉及一個對所有類型和風格的編程都至關重要的主題：</span><strong><span>list</span></strong><span>。列表基本上是一種將事物（稱為</span><strong><span>elements</span></strong><span>）進行分組的有序方式-Python中列表的最酷的功能是您可以擁有一個包含多種類型對象的列表。您的列表可以混合在字符串，整數，對象，其他列表之間，包括您所擁有的。</span></p>
+<p><span><span>構造一個空列表的方法就是</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+</figure>
+<p><span></span><code class="highlighter-rouge">x</code><span><span>現在</span><span>，您的變量</span><span>包含一個空列表。</span><span>要將內容添加到此列表中，只需將它們“添加”到列表中即可。</span><span>像這樣：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>您的清單</span></span><code class="highlighter-rouge">x</code><span><span>現在看起來像</span></span><code class="highlighter-rouge">[3]</code><span><span>。</span></span></p>
+<p><span><span>在Python中，列表也是</span></span><strong><span><span>可迭代的</span></span></strong><span><span>，這意味著您可以</span><span>方便地</span><span>使用</span></span><strong><span><span>for循環</span></span></strong><span><span>遍歷它們</span><span>。</span><span>（如果您來自其他語言，例如C ++或Java，則最有可能習慣於使用計數器循環遍歷列表的索引-在Python中，您實際上可以循環遍曆元素。）我將讓代碼說明自己：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>將產生結果：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon">1 <span></span>
+3<span></span>
+"Michele"<span></span>
+[5, 6, 7]</code></pre>
+</figure>
+<p><span><span>列表還有許多其他屬性，但是對於基本練習而言，您只需要此for循環屬性。</span><span>未來幾週將處理列表的其他屬性。</span></span></p>
+<h3>More Conditionals更多條件</h3>
 <p>The nice thing about conditionals is that they follow logical operations. They can also be used to test equality. Let’s do a small example. Let’s say I want to make a piece of code that converts from a numerical grade (1-100) to a letter grade (A, B, C, D, F). The code would look like this:</p>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
@@ -453,6 +494,21 @@
   <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
 </figure>
 <p>What happens if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 50? All the conditions are false, so<span> </span><code class="highlighter-rouge">"F"</code><span> </span>gets printed on the screen. But what if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, executing<span> </span><code class="highlighter-rouge">print("A")</code>. Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
+<p><span>關於條件的好處是它們遵循邏輯運算。它們也可以用於測試相等性。讓我們做一個小例子。假設我要編寫一段代碼，將其從數字等級（1-100）轉換為字母等級（A，B，C，D，F）。代碼如下所示：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>如果</span></span><code class="highlighter-rouge">grade</code><span><span>是50，</span><span>會發生什麼</span><span>？</span><span>所有條件均為假，因此</span></span><code class="highlighter-rouge">"F"</code><span><span>將其打印在屏幕上。</span><span>但是，如果</span></span><code class="highlighter-rouge">grade</code><span><span>是95，該怎麼辦？</span><span>然後所有條件都成立，一切都打印出來了，對吧？</span><span>不！</span><span>程序將逐行執行。</span><span>滿足第一個條件（等級&gt; = 90），因此程序將輸入</span></span><code class="highlighter-rouge">if</code><span><span>語句</span><span>內的代碼</span><span>，執行</span></span><code class="highlighter-rouge">print("A")</code><span><span>。</span><span>一旦執行了條件語句中的代碼，將跳過其餘條件，並且不檢查其他條件。</span></span></p>
 <p></p>
 <p><span></span></p>
 <figure class="highlight">
