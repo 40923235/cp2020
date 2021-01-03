@@ -133,33 +133,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Discussion討論區-1 << <a href='Discussion討論區-1.html'>Previous</a> <a href='Manipulating strings a few ways處理字符串幾種方法.html'>Next</a> >> Manipulating strings a few ways處理字符串幾種方法<br /><h1>User input in Python使用Python的用戶輸入</h1>
-</div>
-<div class="boxframe center">To get user input in Python (3), the command you use is<span> </span><a href="http://docs.python.org/3.3/library/functions.html?highlight=input#input"><code class="highlighter-rouge">input()</code></a>. Store the result in a variable, and use it to your heart’s content. Remember that the result you get from the user will be a string, even if they enter a number.
-<p>For example,</p>
+    <div id="tipue_search_content">Lists清單 << <a href='Lists清單.html'>Previous</a> <a href='HAPPY.html'>Next</a> >> HAPPY<br /><h1>More Conditionals更多條件</h1>
+<p>The nice thing about conditionals is that they follow logical operations. They can also be used to test equality. Let’s do a small example. Let’s say I want to make a piece of code that converts from a numerical grade (1-100) to a letter grade (A, B, C, D, F). The code would look like this:</p>
 <figure class="highlight">
-<pre><code class="language-python" data-lang="python"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Give me your name: "</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"Your name is "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span></code></pre>
+<pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
 </figure>
-<p>What this will print in the terminal (or the shell, whatever you are running Python in) will be:</p>
+<p>What happens if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 50? All the conditions are false, so<span> </span><code class="highlighter-rouge">"F"</code><span> </span>gets printed on the screen. But what if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, executing<span> </span><code class="highlighter-rouge">print("A")</code>. Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
+<p><span>關於條件的好處是它們遵循邏輯運算。它們也可以用於測試相等性。讓我們做一個小例子。假設我要編寫一段代碼，將其從數字等級（1-100）轉換為字母等級（A，B，C，D，F）。代碼如下所示：</span></p>
 <figure class="highlight">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">Give</span> <span class="n">me</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Michele</span>
-<span class="n">Your</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">Michele</span></code></pre>
+<pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
 </figure>
-<p>What happens at the end of<span> </span><code class="highlighter-rouge">input()</code><span> </span>is that it waits for the user to type something and press ENTER. Only after the user presses ENTER does the program continue.</p>
-<p><span>要在Python（3）中獲得用戶輸入，你使用的命令是</span><a href="http://docs.python.org/3.3/library/functions.html?highlight=input#input"><code class="highlighter-rouge">input()</code></a><span>。將結果存儲在變量中，並將其用於你的內心。請記住，即使用戶輸入數字，你從用戶那裡得到的結果也將是字符串。</span></p>
-<p><span><span>例如，</span></span></p>
-<figure class="highlight">
-<pre><code class="language-python" data-lang="python"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Give me your name: "</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"Your name is "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span></code></pre>
-</figure>
-<p><span><span>這將在終端（或外殼，無論您在其中運行Python的是什麼）中顯示的內容是：</span></span></p>
-<figure class="highlight">
-<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">Give</span> <span class="n">me</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Michele</span>
-<span class="n">Your</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">Michele</span></code></pre>
-</figure>
-<p><span><span>最後發生的</span></span><code class="highlighter-rouge">input()</code><span><span>是，它等待用戶鍵入內容並按Enter。</span><span>僅在用戶按下ENTER之後，程序才會繼續。</span></span></p>
-<br />Discussion討論區-1 << <a href='Discussion討論區-1.html'>Previous</a> <a href='Manipulating strings a few ways處理字符串幾種方法.html'>Next</a> >> Manipulating strings a few ways處理字符串幾種方法</div>
+<p><span><span>如果</span></span><code class="highlighter-rouge">grade</code><span><span>是50，</span><span>會發生什麼</span><span>？</span><span>所有條件均為假，因此</span></span><code class="highlighter-rouge">"F"</code><span><span>將其打印在屏幕上。</span><span>但是，如果</span></span><code class="highlighter-rouge">grade</code><span><span>是95，該怎麼辦？</span><span>然後所有條件都成立，一切都打印出來了，對吧？</span><span>不！</span><span>程序將逐行執行。</span><span>滿足第一個條件（等級&gt; = 90），因此程序將輸入</span></span><code class="highlighter-rouge">if</code><span><span>語句</span><span>內的代碼</span><span>，執行</span></span><code class="highlighter-rouge">print("A")</code><span><span>。</span><span>一旦執行了條件語句中的代碼，將跳過其餘條件，並且不檢查其他條件。</span></span></p>
+<br />Lists清單 << <a href='Lists清單.html'>Previous</a> <a href='HAPPY.html'>Next</a> >> HAPPY</div>
         
     <!-- footer -->
       <div class="container">
